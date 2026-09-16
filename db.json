@@ -1,0 +1,233 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Alex Morgan",
+      "email": "alex@taskflow.dev"
+    },
+    {
+      "id": "u2",
+      "name": "Sophia Bennett",
+      "email": "sophia@taskflow.dev"
+    },
+    {
+      "id": "u3",
+      "name": "Marcus Chen",
+      "email": "marcus@taskflow.dev"
+    },
+    {
+      "id": "u4",
+      "name": "Elena Rostova",
+      "email": "elena@taskflow.dev"
+    },
+    {
+      "id": "u5",
+      "name": "David Singh",
+      "email": "david@taskflow.dev"
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "name": "TaskFlow Mobile App v2.0",
+      "description": "Redesigning the iOS and Android clients with offline data cache synchronization.",
+      "memberIds": [
+        "u1",
+        "u2",
+        "u3"
+      ],
+      "createdAt": "2026-08-01T09:00:00.000Z"
+    },
+    {
+      "id": "p2",
+      "name": "Design System Revamp",
+      "description": "Unifying Tailwind tokens, accessibility audits, and shared component library.",
+      "memberIds": [
+        "u2",
+        "u4"
+      ],
+      "createdAt": "2026-08-10T09:00:00.000Z"
+    },
+    {
+      "id": "p3",
+      "name": "Q4 Performance Benchmarking",
+      "description": "Core Web Vitals optimization and API latency audits ahead of Q4 launch.",
+      "memberIds": [
+        "u1",
+        "u3",
+        "u5"
+      ],
+      "createdAt": "2026-08-20T09:00:00.000Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t1",
+      "projectId": "p1",
+      "title": "Setup biometric authentication (FaceID/Fingerprint)",
+      "description": "Add native biometric unlock with a PIN fallback.",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "assigneeId": "u3",
+      "dueDate": "2026-09-20",
+      "createdAt": "2026-09-01T10:00:00.000Z",
+      "updatedAt": "2026-09-16T07:46:39.381Z"
+    },
+    {
+      "id": "t2",
+      "projectId": "p1",
+      "title": "Design empty state illustrations for offline cache",
+      "description": "Cover no-connection and first-run empty states.",
+      "status": "TODO",
+      "priority": "LOW",
+      "assigneeId": "u2",
+      "dueDate": "2026-10-02",
+      "createdAt": "2026-09-02T10:00:00.000Z",
+      "updatedAt": "2026-09-02T10:00:00.000Z"
+    },
+    {
+      "id": "t3",
+      "projectId": "p1",
+      "title": "Implement WebSocket reconnect logic on background fetch",
+      "description": "Exponential backoff reconnect when the app resumes from background.",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "assigneeId": "u1",
+      "dueDate": "2026-09-14",
+      "createdAt": "2026-08-28T10:00:00.000Z",
+      "updatedAt": "2026-09-10T10:00:00.000Z"
+    },
+    {
+      "id": "t4",
+      "projectId": "p1",
+      "title": "Refactor global state store slices",
+      "description": "Split the monolithic store into domain-scoped slices.",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "assigneeId": "u2",
+      "dueDate": "2026-09-11",
+      "createdAt": "2026-08-25T10:00:00.000Z",
+      "updatedAt": "2026-09-09T10:00:00.000Z"
+    },
+    {
+      "id": "t5",
+      "projectId": "p1",
+      "title": "Initial SDK migration and dependency audit",
+      "description": "Bump the native SDK and audit third-party dependencies.",
+      "status": "DONE",
+      "priority": "HIGH",
+      "assigneeId": "u3",
+      "dueDate": "2026-09-05",
+      "createdAt": "2026-08-15T10:00:00.000Z",
+      "updatedAt": "2026-09-04T10:00:00.000Z"
+    },
+    {
+      "id": "t6",
+      "projectId": "p1",
+      "title": "Dark mode color token mapping",
+      "description": "Map OLED-friendly dark palette to design tokens.",
+      "status": "DONE",
+      "priority": "MEDIUM",
+      "assigneeId": "u1",
+      "dueDate": "2026-09-08",
+      "createdAt": "2026-08-18T10:00:00.000Z",
+      "updatedAt": "2026-09-07T10:00:00.000Z"
+    },
+    {
+      "id": "t7",
+      "projectId": "p2",
+      "title": "Unify Tailwind design tokens across components",
+      "description": "Consolidate spacing, color and typography scales.",
+      "status": "IN_PROGRESS",
+      "priority": "HIGH",
+      "assigneeId": "u4",
+      "dueDate": "2026-09-16",
+      "createdAt": "2026-08-20T10:00:00.000Z",
+      "updatedAt": "2026-09-10T10:00:00.000Z"
+    },
+    {
+      "id": "t8",
+      "projectId": "p2",
+      "title": "Accessibility audit for form components",
+      "description": "Check labels, focus order and contrast on all inputs.",
+      "status": "TODO",
+      "priority": "MEDIUM",
+      "assigneeId": "u2",
+      "dueDate": "2026-09-10",
+      "createdAt": "2026-08-22T10:00:00.000Z",
+      "updatedAt": "2026-08-22T10:00:00.000Z"
+    },
+    {
+      "id": "t9",
+      "projectId": "p2",
+      "title": "Figma component library sync",
+      "description": "Sync built components back into the shared Figma library.",
+      "status": "TODO",
+      "priority": "LOW",
+      "assigneeId": "u4",
+      "dueDate": "2026-09-25",
+      "createdAt": "2026-08-24T10:00:00.000Z",
+      "updatedAt": "2026-08-24T10:00:00.000Z"
+    },
+    {
+      "id": "t10",
+      "projectId": "p2",
+      "title": "Publish design system documentation site",
+      "description": "Ship the docs site with live component previews.",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "assigneeId": "u2",
+      "dueDate": "2026-09-19",
+      "createdAt": "2026-08-26T10:00:00.000Z",
+      "updatedAt": "2026-09-11T10:00:00.000Z"
+    },
+    {
+      "id": "t11",
+      "projectId": "p2",
+      "title": "Color contrast pass for dark theme",
+      "description": "Verify WCAG AA contrast across dark theme surfaces.",
+      "status": "DONE",
+      "priority": "HIGH",
+      "assigneeId": "u4",
+      "dueDate": "2026-09-02",
+      "createdAt": "2026-08-12T10:00:00.000Z",
+      "updatedAt": "2026-09-01T10:00:00.000Z"
+    },
+    {
+      "id": "t12",
+      "projectId": "p3",
+      "title": "Core Web Vitals optimization for dashboard",
+      "description": "Improve LCP and CLS on the dashboard route.",
+      "status": "TODO",
+      "priority": "HIGH",
+      "assigneeId": "u5",
+      "dueDate": "2026-09-18",
+      "createdAt": "2026-08-27T10:00:00.000Z",
+      "updatedAt": "2026-08-27T10:00:00.000Z"
+    },
+    {
+      "id": "t13",
+      "projectId": "p3",
+      "title": "API latency audit for tasks endpoint",
+      "description": "Profile the tasks list endpoint under load.",
+      "status": "IN_PROGRESS",
+      "priority": "MEDIUM",
+      "assigneeId": "u1",
+      "dueDate": "2026-09-06",
+      "createdAt": "2026-08-23T10:00:00.000Z",
+      "updatedAt": "2026-09-16T08:01:49.294Z"
+    },
+    {
+      "id": "t15",
+      "projectId": "p3",
+      "title": "Load testing report for peak traffic",
+      "description": "Simulate peak concurrent users and report bottlenecks.",
+      "status": "IN_PROGRESS",
+      "priority": "LOW",
+      "assigneeId": "u5",
+      "dueDate": "2026-08-30",
+      "createdAt": "2026-08-14T10:00:00.000Z",
+      "updatedAt": "2026-09-16T07:41:44.647Z"
+    }
+  ]
+}
